@@ -6,6 +6,7 @@ const { webhooks } = require('../../services/paymentGateway')
 //Listen for all payments
 router.post('/payment', async (req, res, next) => {
     try {
+        console.log("notification!", req.body)
         webhooks.payments.receivePaymentResult(req.body)
         res.status(200).json({ message: 'Payment received' })
     } catch (error) {
