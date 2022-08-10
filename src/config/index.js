@@ -20,7 +20,7 @@ const PHONES_ALLOWED = getAllowedPhones()
 module.exports = {
     SERVER_PORT: process.env.SERVER_PORT || 3040,
 
-    CONTEXT_PATH: process.env.CONTEXT_PATH || '/api-notifications',
+    CONTEXT_PATH: process.env.CONTEXT_PATH || '/api-payment-gateway',
     TZ: process.env.TZ || 'America/Mexico_City',
 
     /**
